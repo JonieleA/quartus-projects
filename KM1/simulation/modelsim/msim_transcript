@@ -1,0 +1,105 @@
+# Reading pref.tcl
+# do KM1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/KM1_1 {D:/KM1_1/par_posl_adder_param.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:18 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1" D:/KM1_1/par_posl_adder_param.sv 
+# -- Compiling module par_posl_adder_param
+# 
+# Top level modules:
+# 	par_posl_adder_param
+# End time: 00:29:18 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/KM1_1 {D:/KM1_1/unit_latch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:18 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1" D:/KM1_1/unit_latch.sv 
+# -- Compiling module unit_latch
+# 
+# Top level modules:
+# 	unit_latch
+# End time: 00:29:19 on Sep 27,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/KM1_1 {D:/KM1_1/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:19 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1" D:/KM1_1/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 00:29:19 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/KM1_1 {D:/KM1_1/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:19 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1" D:/KM1_1/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 00:29:19 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/KM1_1 {D:/KM1_1/bit_8_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:19 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1" D:/KM1_1/bit_8_adder.sv 
+# -- Compiling module bit_8_adder
+# 
+# Top level modules:
+# 	bit_8_adder
+# End time: 00:29:19 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/KM1_1 {D:/KM1_1/par_posl_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:19 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1" D:/KM1_1/par_posl_top.sv 
+# -- Compiling module par_posl_top
+# 
+# Top level modules:
+# 	par_posl_top
+# End time: 00:29:19 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/KM1_1/output_files {D:/KM1_1/output_files/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:29:19 on Sep 27,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/KM1_1/output_files" D:/KM1_1/output_files/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 00:29:19 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 00:29:20 on Sep 27,2024
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.par_posl_adder_param
+# Loading work.bit_8_adder
+# Loading work.full_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# Testbench is OK!
+# Break key hit
+# Simulation stop requested.
+# End time: 00:30:28 on Sep 27,2024, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0

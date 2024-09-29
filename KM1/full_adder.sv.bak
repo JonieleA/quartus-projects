@@ -1,0 +1,6 @@
+module full_adder (A, B, C_in, C_out, S);
+input logic A, B, Cin;
+output logic S, Cout;
+assign S = A ^ B ^ Cin;
+assign Cout = (A & B) | (Cin & (A ^ B));
+endmodule

@@ -1,0 +1,2 @@
+module bit_8_adder (A, B, C_in, C_out, S);
+

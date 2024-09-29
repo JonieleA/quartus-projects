@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Sep 27 00:42:10 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : KM1
+Top-level Entity Name : posl_top
+Family : Cyclone IV E
+Device : EP4CE30F29C8
+Timing Models : Final
+Total logic elements : 436 / 28,848 ( 2 % )
+    Total combinational functions : 334 / 28,848 ( 1 % )
+    Dedicated logic registers : 386 / 28,848 ( 1 % )
+Total registers : 386
+Total pins : 389 / 533 ( 73 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
