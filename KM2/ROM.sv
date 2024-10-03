@@ -8,10 +8,12 @@ module ROM
 
 // Declare the ROM variable
 logic [DATA_WIDTH-1:0] rom[2**ADDR_WIDTH-1:0];
+logic [7:0]  j;
+int i;
 
 initial
     begin
-        $readmemb("rom128x8.txt", rom);
+        $readmemb("rom128x8.txt", rom, 2**ADDR_WIDTH-1, 0);
     end
 
     always_ff @ (posedge clk)
